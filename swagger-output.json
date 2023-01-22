@@ -5,10 +5,10 @@
     "description": "Welcome to my fumbling mess",
     "version": "1.0.0"
   },
-  "host": "cse341-l6.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/characters/": {

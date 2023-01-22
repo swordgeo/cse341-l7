@@ -3,13 +3,18 @@ const express = require('express');
 const app = express();
 const mongodb = require('./db/connect');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
 
 
-mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true});
-const db  = mongoose.connection;
-db.on('error', (error ) => console.error(error))
-db.once('open', () => console.log('Connected to Database'));
+//const mongoose = require('mongoose');
+
+//This junk is superfluous too; I'm connecting through /db/connect
+
+// mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true});
+// const db  = mongoose.connection;
+// db.on('error', (error ) => console.error(error))
+// db.once('open', () => console.log('Connected to Database'));
+
+app.set('view-engine', 'ejs')
 
 const port = process.env.PORT || 3000;
 
