@@ -19,10 +19,10 @@
   },
   "homepage": "https://github.com/swordgeo/cse341-l7#readme",
   "dependencies": {
-    "bcrypt": "^5.1.0",
+
     "body-parser": "^1.20.1",
     "dotenv": "^16.0.3",
-    "ejs": "^3.1.8",
+
     "express": "^4.18.2",
     "express-openid": "^1.0.8",
     "express-openid-connect": "^2.12.0",

@@ -4,6 +4,8 @@ const { auth, requiresAuth } = require('express-openid-connect');
 
 const charactersController = require('../controllers/characters');
 
+// requiresAuth is crashing things when not logged in. Not sure what to do about it yet.
+
 routes.get('/', charactersController.getCharacters); 
 routes.get('/:id', charactersController.getCharacter);
 routes.post('/', requiresAuth(), charactersController.addCharacter);

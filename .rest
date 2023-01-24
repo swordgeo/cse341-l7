@@ -59,31 +59,31 @@ Content-type: application/json
 }
 //End characters
 
-//users
+//Players
 ###
-GET http://localhost:3000/users/
+GET http://localhost:3000/players/
 
 //Individuals
 ###
-GET http://localhost:3000/users/63c88ff5b0b091bd98329493
+GET http://localhost:3000/players/63c88ff5b0b091bd98329493
 ###
-GET http://localhost:3000/users/63cc3ae297a833a4c91e920e
+GET http://localhost:3000/players/63cc3ae297a833a4c91e920e
 ###
-GET http://localhost:3000/users/63cd88bca044fb20f03ebd9f
+GET http://localhost:3000/players/63cc182c9547e289f6282060
 ###
-POST http://localhost:3000/users/
+POST http://localhost:3000/players/
 Content-Type: application/json
 
 {
-"displayName": "Ross",
-"username": "Balthazar",
-"password": "Eberron"
+"playerName": "Ross",
+"characterName": "Balthazar",
+"campaign": "Eberron"
 }
 
 ###
-DELETE http://localhost:3000/users/63cd88bca044fb20f03ebd9f
+DELETE http://localhost:3000/players/63cc3ae297a833a4c91e920e
 ###
-PATCH http://localhost:3000/users/63cd88bca044fb20f03ebd9f
+PATCH http://localhost:3000/players/63cc3977dfea037fdc675af4
 Content-type: application/json
 
 {
@@ -91,7 +91,7 @@ Content-type: application/json
   "playerName": "George"
 }
 
-//End users
+//End Players
 
 
 //------
@@ -165,19 +165,19 @@ Content-type: application/json
 
 //End characters
 
-//users
+//Players
 ###
-GET http://cse341-l7.onrender.com/users/
+GET http://cse341-l7.onrender.com/players/
 
 //Individuals
 ###
-GET http://cse341-l7.onrender.com/users/63c460951020ab4635d1bf7a
+GET http://cse341-l7.onrender.com/players/63c460951020ab4635d1bf7a
 ###
-GET http://cse341-l7.onrender.com/users/63c460951020ab4635d1bf7b
+GET http://cse341-l7.onrender.com/players/63c460951020ab4635d1bf7b
 ###
-GET http://cse341-l7.onrender.com/users/63cc3977dfea037fdc675af4
+GET http://cse341-l7.onrender.com/players/63cc3977dfea037fdc675af4
 ###
-POST http://cse341-l7.onrender.com/users/
+POST http://cse341-l7.onrender.com/players/
 Content-Type: application/json
 
 {
@@ -187,9 +187,9 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://cse341-l7.onrender.com/users/63c8a0fb0ddf85957df7e854
+DELETE http://cse341-l7.onrender.com/players/63c8a0fb0ddf85957df7e854
 ###
-PATCH http://cse341-l7.onrender.com/users/63cc3977dfea037fdc675af4
+PATCH http://cse341-l7.onrender.com/players/63cc3977dfea037fdc675af4
 Content-type: application/json
 
 {
@@ -197,4 +197,4 @@ Content-type: application/json
   "campaign": "Sunrise Knights"
 }
 
-//End users
+//End Players
