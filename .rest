@@ -104,21 +104,21 @@ Content-type: application/json
 //AND REMEMBER TO TOSS IN .env DETAILS In Environment/Environment Variables
 
 ###
-GET https://cse341-l6.onrender.com/characters/
+GET https://cse341-l7.onrender.com/characters/
 
 //Individuals
 ###
-GET https://cse341-l6.onrender.com/characters/63c460951020ab4635d1bf7a
+GET https://cse341-l7.onrender.com/characters/63c460951020ab4635d1bf7a
 
 ###
 
-GET https://cse341-l6.onrender.com/characters/63b8bfd0d1eae2434d1851e0
+GET https://cse341-l7.onrender.com/characters/63b8bfd0d1eae2434d1851e0
 
 ###
-GET https://cse341-l6.onrender.com/characters/63b8bfd0d1eae2434d1851e1
+GET https://cse341-l7.onrender.com/characters/63b8bfd0d1eae2434d1851e1
 
 ###
-POST https://cse341-l6.onrender.com/characters/
+POST https://cse341-l7.onrender.com/characters/
 Content-Type: application/json
 
 {
@@ -139,7 +139,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE https://cse341-l6.onrender.com/characters/63c8a39eff54365eb9eabb0f
+DELETE https://cse341-l7.onrender.com/characters/63c8a39eff54365eb9eabb0f
 
 ###
 //With PATCH we don't have to refill every field
@@ -147,7 +147,7 @@ DELETE https://cse341-l6.onrender.com/characters/63c8a39eff54365eb9eabb0f
 //Assignment demands I use 204 but that status won't let me set json messages
 //So don't freak out that we get no message - freak out if we DO
 
-PATCH https://cse341-l6.onrender.com/characters/63cc3b6e941e42104ffd3e8b
+PATCH https://cse341-l7.onrender.com/characters/63cc3b6e941e42104ffd3e8b
 Content-type: application/json
 
 {
@@ -167,17 +167,17 @@ Content-type: application/json
 
 //users
 ###
-GET http://cse341-l6.onrender.com/users/
+GET http://cse341-l7.onrender.com/users/
 
 //Individuals
 ###
-GET http://cse341-l6.onrender.com/users/63c460951020ab4635d1bf7a
+GET http://cse341-l7.onrender.com/users/63c460951020ab4635d1bf7a
 ###
-GET http://cse341-l6.onrender.com/users/63c460951020ab4635d1bf7b
+GET http://cse341-l7.onrender.com/users/63c460951020ab4635d1bf7b
 ###
-GET http://cse341-l6.onrender.com/users/63cc3977dfea037fdc675af4
+GET http://cse341-l7.onrender.com/users/63cc3977dfea037fdc675af4
 ###
-POST http://cse341-l6.onrender.com/users/
+POST http://cse341-l7.onrender.com/users/
 Content-Type: application/json
 
 {
@@ -187,9 +187,9 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://cse341-l6.onrender.com/users/63c8a0fb0ddf85957df7e854
+DELETE http://cse341-l7.onrender.com/users/63c8a0fb0ddf85957df7e854
 ###
-PATCH http://cse341-l6.onrender.com/users/63cc3977dfea037fdc675af4
+PATCH http://cse341-l7.onrender.com/users/63cc3977dfea037fdc675af4
 Content-type: application/json
 
 {
