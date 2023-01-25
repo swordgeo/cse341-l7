@@ -3,12 +3,13 @@
   "info": {
     "title": "My API",
     "description": "Welcome to my fumbling mess",
+    
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse341-l7.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/characters/": {

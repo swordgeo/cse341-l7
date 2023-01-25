@@ -3,7 +3,9 @@ const express = require('express');
 const app = express();
 const mongodb = require('./db/connect');
 const bodyParser = require('body-parser');
-
+//graphQL
+const {graphqlHTTP} = require('express-graphql');
+const schema = require('./schema');
 
 
 //Oauth stuff, don't know where to dump it so here it goes
@@ -19,6 +21,7 @@ const config = {
   issuerBaseURL: process.env.ISSUER_BASE_URL
 };
 
+
 // auth router attaches /login, /logout, and /callback routes to the baseURL
 app.use(auth(config));
 
@@ -26,13 +29,28 @@ app.use(auth(config));
 app.get('/', (req, res) => {
   res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
 });
+// app.use((req, res, next) => {
+//   if (!req.oidc.isAuthenticated()) {
+//     return res.status(401).json({error: 'Not authorized'});
+//   }
+//   next();
+// })
 
 app.get('/profile', requiresAuth(), (req, res) => {
   console.log(JSON.stringify(req.oidc.user))
   res.send(JSON.stringify(req.oidc.user));
 }) 
+//End OAuth
 
 
+
+//GraphQL
+app.use('/graphql', graphqlHTTP({
+  schema,
+  pretty: true,
+  graphiql: true,
+}));
+//End GraphQL
 
 
 const port = process.env.PORT || 3000;
